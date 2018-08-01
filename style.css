@@ -58,8 +58,13 @@ div{
     text-align:center;
 }
 #aboutMeContent{
-    width: 500px;
-    justify-content:space-around;
+    display: flex;
+    
+    width:500px;
+}
+#content{
+    padding-left: 100px;
+    
 }
 #s2{
     padding: 30px;
@@ -67,7 +72,8 @@ div{
     margin: 0 auto;
     border: 1px solid;
 }
-#Portfolio{
+.Portfolio{
+    display:flex;
     padding: 30px;
     width: 800px;
     margin: 0 auto;
