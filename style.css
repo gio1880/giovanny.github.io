@@ -39,7 +39,7 @@ img{
 .contetContainer h3{
     margin-top:25px;
 }
-cartoonPic{
+#cartoonPic{
     width:250px
 }
 .body{
@@ -114,7 +114,7 @@ cartoonPic{
     .contetContainer{
         margin-bottom: 25px;
     }
-    cartoonPic{
+    #cartoonPic{
         width:300px
     }
     .body{
