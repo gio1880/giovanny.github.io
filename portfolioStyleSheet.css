@@ -1,0 +1,135 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+img{
+    width:25%;
+}
+#menuBar{
+    display:none;
+    border: 2px solid black;
+    height:100%;
+    width:100%;
+    position:fixed;
+    text-align: center;
+    background:black;
+}
+#menuBar li{
+    text-decoration:none;
+    margin:10px;
+}
+.topBarContainer{
+    display:flex;
+}
+.topLeft{
+    flex:1;
+}
+.topRight{
+    flex:1;
+    margin:2%;
+    display:flex;
+    justify-content:flex-end;
+
+}
+#portfolioTitle{
+    text-align:center;
+}
+.portfolioContainer{
+
+}
+.portfolioImgs{
+    margin:auto;
+    width:60%;
+    position: relative;
+    margin-top:5%;
+}
+.portfolioImg{
+    width:100%;
+    margin-top:10%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+.portfolioImgs:hover .overlay{
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.footer{
+    text-align:center;
+    border: 1px solid black;
+    margin-top:30px;
+}
+.socialMediaIcons{
+    width:20px;
+}
+@media screen and (min-width: 900px) {
+    *{
+
+        font-size:20px;
+    }
+
+    h1{
+        font-size:45px;
+    }
+    h3{
+        font-size:40px;
+    }
+    #menuBar{
+        display:flex;
+        height:100%;
+        width:100%;
+        position:inherit;
+        background:white;
+    }
+    #menuBar li{
+        list-style-type: none;
+    }
+    #sidebarIcon{
+        display:none;
+    }
+    #title{
+        flex:1;
+    }
+    #menuOptions{
+        flex:2;
+    }
+    .menuOptionsContainer{
+        display:flex;
+    }
+    .menuOption{
+        flex:1;
+    }
+    .topBarContainer{
+        display:none;
+    }
+    .contetContainer{
+        margin-bottom: 25px;
+    }
+    #cartoonPic{
+        width:300px
+    }
+    .body{
+        width:75%;
+        margin:auto;
+    }
+    .body p{
+        margin-top:20px;
+    }
+}
