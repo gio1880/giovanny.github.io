@@ -5,13 +5,28 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="tabMenu">
-            <ul>
-                <li id="t1"><a href="index.html">Full Name</a></li>
-                <li id="t2"><a href="aboutMe.htm">About Me</a></li>
-                <li id="t3"><a href="portfolio.html">Portfolio</a></li>
-                <li id="t4"><a href="contact.html">Contact</a></li>
-            </ul>
+        <!--Side Bar-->
+        <div id="menuBar" onclick="w3_close()">
+                <img id="sidebarIcon" src="https://cdn3.iconfinder.com/data/icons/ui-fundamentals/100/UI-F-32-512.png">
+            <div id="title">
+                <p>Giovanny De Los Angeles </p>
+            </div>
+            <div id="menuOptions">
+                <ul class="menuOptionsContainer">
+                    <li class="menuOption"><a href="index.html"> Home </a></li>
+                    <li class="menuOption"><a href="aboutPage.html"> About Me </a></li>
+                    <li class="menuOption"><a href="portfolio.html"> Portfolio </a></li>
+                    <li class="menuOption"><a href="contact.html"> Contact </a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Top Bar-->
+        <div class="topBarContainer">
+            <div class="topLeft">
+            </div>
+            <div class="topRight">
+                <img id="openIcon" onclick="w3_open()" src="https://cdn2.iconfinder.com/data/icons/simple-circular-icons-line/84/Hamburger_Menu-512.png">
+            </div>
         </div>
     </body>
 </html>
