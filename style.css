@@ -39,6 +39,9 @@ img{
 .contetContainer h3{
     margin-top:25px;
 }
+cartoonPic{
+    width:250px
+}
 .body{
     text-align:center;
     border: 1px solid black;
@@ -111,7 +114,9 @@ img{
     .contetContainer{
         margin-bottom: 25px;
     }
-
+    cartoonPic{
+        width:300px
+    }
     .body{
         width:75%;
         margin:auto;
