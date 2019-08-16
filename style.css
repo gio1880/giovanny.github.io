@@ -1,82 +1,87 @@
-div{
-    padding:20px;   
+*{
+    margin:0px;
+    padding:0px;
 }
-#tabMenu ul{
-  color:black;
-  display:flex;
-  justify-content:space-around;
+img{
+    width:50px;
 }
-#tabMenu li{
-  font-size:20px;
-  list-style-type:none; 
-  text-transform:uppercase;
-  border:1px solid black;
-  border-radius:5px;
-  padding:10px;
+#menuBar{
+    display:none;
+    border: 2px solid black;
+    height:100%;
+    width:100%;
+    position:fixed;
+    text-align: center;
+    background:black;
 }
-.menuOptions{
-  visibility:collapse;
-  height:0px;
-  transition:all .2s;
-  box-sizing: border-box;
-  border:solid 1px transparent;
+#menuBar li{
+    text-decoration:none;
+    margin:10px;
 }
-
-.menuOptions.active {
-  visibility:visible;
-  height:100vh;
-}
-#fullName{
+.topBarContainer{
     display:flex;
-    justify-content:space-around;
 }
-#imageTab{
+.topLeft{
+    flex:1;
+}
+.topRight{
+    flex:1;
+    margin:2%;
     display:flex;
-    justify-content:space-around;    
-}
-#personalPhoto{
-    width:100px;
-    height:100px;
-    border-radius:75%;
-    transform: rotate(90deg);
-}
+    justify-content:flex-end;
 
-.image-container{
-    display:flex;
-    flex-wrap:wrap;
 }
-.image-style{
-    width:100px;
-    justify-content:center;
+.contetContainer{
+    text-align:center;
+    margin-top:50px;
+    border: 1px solid black;
 }
-
-.image{
-    width:25%;  
-    
+.contetContainer h3{
+    margin-top:25px;
 }
-.caption{
+.body{
+    text-align:center;
+    border: 1px solid black;
+    margin-top:30px;
+}
+.recentWorks{
+    border: 1px solid black;
+    margin-top:30px;
     text-align:center;
 }
-#aboutMeContent{
-    display: flex;
-    
-    width:500px;
-}
-#content{
-    padding-left: 100px;
-    
-}
-#s2{
-    padding: 30px;
-    width: 800px;
-    margin: 0 auto;
-    border: 1px solid;
-}
-.Portfolio{
+.recentWorkContainer{
     display:flex;
-    padding: 30px;
-    width: 800px;
-    margin: 0 auto;
-    border: 1px solid;
-    justify-content:center;
+}
+.recentWork{
+    flex:1;
+    border: 1px solid black;
+    margin-top:30px;
+}
+.recentWorkImgs{
+    width:100%;
+}
+.footer{
+    text-align:center;
+    border: 1px solid black;
+    margin-top:30px;
+}
+.socialMediaIcons{
+    width:20px;
+}
+@media only screen and (min-width: 1000px) {
+    img{
+        display:none;
+    }
+    #menuBar{
+        display:flex;
+        display:block;
+    }
+    #title{
+        flex:1;
+    }
+    #menuOptions{
+        flex:1;
+        display:flex;
+        justify-content:space-between;
+    }
 }
